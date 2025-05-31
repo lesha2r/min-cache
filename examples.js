@@ -1,6 +1,6 @@
-import MiniCache from './dist/index.js';
+import MinCache from './dist/index.js';
 
-const cache = new MiniCache('myCache', {
+const cache = new MinCache('myCache', {
   maxSizeKb: 5 * 1024,    // Max cache size in KB
   delExpiredMs: 60000,    // Clear interval
   ttlMs: 30000,           // Default TTL for items (ms)

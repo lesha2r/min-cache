@@ -1,5 +1,5 @@
 import { calcApproxObjSize } from "./helpers.js";
-import { CacheOptions, CacheItem, MiniCache as MiniCacheType } from "./types.js";
+import { CacheOptions, CacheItem, MinCache as MinCacheType } from "./types.js";
 
 const defaultOptions: CacheOptions = {
   delExpiredMs: 10000,
@@ -8,7 +8,7 @@ const defaultOptions: CacheOptions = {
   ttlMs: 60 * 1000,
 };
 
-class MiniCache<T = any> implements MiniCacheType<T> {
+class MinCache<T = any> implements MinCacheType<T> {
   private storage: Map<string, CacheItem<T>> = new Map();
   private options: CacheOptions | Partial<CacheOptions>;
   private currentSizeBytes: number = 0;
@@ -31,7 +31,7 @@ class MiniCache<T = any> implements MiniCacheType<T> {
   private log(...args: any[]) {
     if (!this.debug) return;
 
-    console.log(`[MiniCache: ${this.id}]`, ...args);
+    console.log(`[MinCache: ${this.id}]`, ...args);
   }
 
   private calculateSize(data: any): number {
@@ -247,4 +247,4 @@ class MiniCache<T = any> implements MiniCacheType<T> {
   // RENAME = this.rename;
 }
 
-export default MiniCache;
+export default MinCache;

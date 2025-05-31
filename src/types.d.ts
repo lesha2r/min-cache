@@ -11,7 +11,7 @@ export interface CacheItem<T = any> {
   size: number;
 }
 
-export declare class MiniCache<T = any> {
+export declare class MinCache<T = any> {
   constructor(id: string, optionsArg?: CacheOptions);
 
   size(): number;

@@ -1,4 +1,4 @@
-# MiniCache
+# MinCache
 
 Ultra-lightweight, in-memory cache for Node.js with TTL support and configurable size limits.
 
@@ -14,15 +14,15 @@ Ultra-lightweight, in-memory cache for Node.js with TTL support and configurable
 ## Installation
 
 ```sh
-npm install mini-cache
+npm install min-cache
 ```
 
 ## Usage
 
 ```js
-import MiniCache from 'mini-cache';
+import MinCache from 'min-cache';
 
-const cache = new MiniCache('myCache', {
+const cache = new MinCache('myCache', {
   maxSizeKb: 5 * 1024,    // Max cache size in KB
   clearExpiredMs: 60000,  // Clear interval
   ttlMs: 30000,           // Default TTL for items (ms)
@@ -62,7 +62,7 @@ const matchesLimited = cache.scan('user*', 10);
 ### Constructor
 
 ```ts
-new MiniCache(id: string, options?: CacheOptions)
+new MinCache(id: string, options?: CacheOptions)
 ```
 
 - `id`: Unique cache name (for logging/debugging)

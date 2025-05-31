@@ -1,5 +1,5 @@
 {
-  "name": "mini-cache",
+  "name": "min-cache",
   "version": "0.1.0",
   "description": "Ultra-lightweight in-memory cache with TTL",
   "keywords": [
@@ -9,13 +9,13 @@
     "storage",
     "ram"
   ],
-  "homepage": "https://github.com/lesha2r/mini-cache#readme",
+  "homepage": "https://github.com/lesha2r/min-cache#readme",
   "bugs": {
-    "url": "https://github.com/lesha2r/mini-cache/issues"
+    "url": "https://github.com/lesha2r/min-cache/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lesha2r/mini-cache.git"
+    "url": "git+https://github.com/lesha2r/min-cache.git"
   },
   "license": "ISC",
   "author": "lesha2r",
