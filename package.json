@@ -1,0 +1,35 @@
+{
+  "name": "mini-cache",
+  "version": "0.1.0",
+  "description": "Ultra-lightweight in-memory cache with TTL",
+  "keywords": [
+    "cache",
+    "caching",
+    "data",
+    "storage",
+    "ram"
+  ],
+  "homepage": "https://github.com/lesha2r/mini-cache#readme",
+  "bugs": {
+    "url": "https://github.com/lesha2r/mini-cache/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesha2r/mini-cache.git"
+  },
+  "license": "ISC",
+  "author": "lesha2r",
+  "type": "module",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "tsc": "tsc -b src/",
+    "tsc-watch": "tsc --b --watch src/",
+    "tscw": "tsc --b --watch src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "typescript": "^5.8.3"
+  }
+}
