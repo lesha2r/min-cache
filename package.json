@@ -20,7 +20,7 @@
   "license": "ISC",
   "author": "lesha2r",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "tsc": "tsc -b src/",
