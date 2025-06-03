@@ -1,5 +1,5 @@
-import { CacheOptions, MiniCache as MiniCacheType } from "./types.js";
-declare class MiniCache<T = any> implements MiniCacheType<T> {
+import { CacheOptions, MinCache as MinCacheType } from "./types.js";
+declare class MinCache<T = any> implements MinCacheType<T> {
     private readonly id;
     private storage;
     private options;
@@ -23,4 +23,4 @@ declare class MiniCache<T = any> implements MiniCacheType<T> {
     rename(oldKey: string, newKey: string): boolean;
     scan(pattern: string, count?: number): string[];
 }
-export default MiniCache;
+export default MinCache;

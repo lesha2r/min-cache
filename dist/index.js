@@ -5,7 +5,7 @@ const defaultOptions = {
     maxSizeKb: 10 * 1024,
     ttlMs: 60 * 1000,
 };
-class MiniCache {
+class MinCache {
     id;
     storage = new Map();
     options;
@@ -24,7 +24,7 @@ class MiniCache {
     log(...args) {
         if (!this.debug)
             return;
-        console.log(`[MiniCache: ${this.id}]`, ...args);
+        console.log(`[MinCache: ${this.id}]`, ...args);
     }
     calculateSize(data) {
         return calcApproxObjSize(data);
@@ -186,4 +186,4 @@ class MiniCache {
         return keys;
     }
 }
-export default MiniCache;
+export default MinCache;

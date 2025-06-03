@@ -29,5 +29,5 @@ export const checkExpiration = (expiresAt) => {
     return result;
 };
 export const warnMsg = (text) => {
-    console.warn('[MiniCache] Warning! ' + text);
+    console.warn('[MinCache] Warning! ' + text);
 };
