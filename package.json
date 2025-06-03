@@ -1,6 +1,6 @@
 {
   "name": "min-cache",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ultra-lightweight in-memory cache with TTL",
   "keywords": [
     "cache",
@@ -20,7 +20,7 @@
   "license": "ISC",
   "author": "lesha2r",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "tsc": "tsc -b src/",
